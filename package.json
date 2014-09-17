@@ -1,0 +1,27 @@
+{
+  "name": "integrha",
+  "version": "1.0.0",
+  "description": "Website for Integrha company",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valgreen01/integrha"
+  },
+  "keywords": [
+    "integhra"
+  ],
+  "author": "Aldo Valverde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valgreen01/integrha/issues"
+  },
+  "homepage": "https://github.com/valgreen01/integrha"
+}
