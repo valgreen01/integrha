@@ -1,0 +1,171 @@
+.navigation-bar {
+	background-color: @blue;
+
+	.brand-container {
+		background-color: @white;
+		height: 90px;
+		width: 45%;
+		padding: 0 15px;
+		float: left;
+		.widthTransition;
+	}
+
+	.navbar-brand-custom {
+		background-image: url("../img/logo-sm.png");
+		background-repeat: no-repeat;
+		width: 45px;
+		height: 51px;
+		margin: 18px auto 17px auto;
+		display: block;
+		.widthTransition;
+	}
+
+	.diagonal-shape {
+		float: left;
+		margin-left: 0px;
+		position: relative;
+		height: 0px;
+		width: 0px;
+		top: 0px;
+		border-top: 45px solid transparent;
+		border-left: 45px solid #ffffff;
+		border-right: 45px solid transparent;
+		border-bottom: 45px solid #ffffff;
+	}
+}
+
+
+.nav-list-container {
+	background-color: @white;
+}
+
+.nav-list {
+	margin-top: -1px;
+	margin-bottom: 0; 
+	
+	li {
+		border-top: 1px solid @grayLight;
+		
+		a {
+			color: @grayDark;
+			font-family: @proximaNova;
+			font-size: 21px;
+			.fastTransition;
+		}
+
+		a:hover {
+			text-decoration: none;
+			background-color: transparent;
+		}
+
+	}
+
+	li:hover {
+		background-color: @whiteDark;
+	}
+
+	li:last-child {
+		border-bottom: 1px solid @grayLight;
+	}
+
+	li.active {
+		background-color: @whiteDark;
+	}
+
+}
+
+
+.navbar-toggle {
+	margin-right: 15px;
+	padding: 18px 15px;
+	margin-top: 15px;
+	margin-bottom: 8px;
+	border-radius: 100%;
+	background-color: white;
+}
+
+.navbar-toggle .icon-bar {
+	width: 25px;
+	height: 4px;
+	background: @blue;
+}
+
+
+// Responsive media queries
+
+@media (min-width: 1000px) {
+	
+
+	.navbar-header {
+		width: 100%;
+
+		.brand-container {
+			width: 30%;
+		}
+
+		/*.navbar-brand-custom {
+			background-image: url("../img/logo.png");
+			background-repeat: no-repeat;
+			width: 163px;
+			height: 55px;
+		}*/
+	}
+
+    .nav-list {
+		position: absolute;
+        top: 35px;
+		right: 15px;
+		
+		li {
+			border-top: 0;
+			
+			a {
+				color: @white;
+				border-right: 1px solid white;
+				padding: 0 15px;
+			}
+			a:hover {
+				color: @blueDark;
+				background-color: transparent;
+			}
+		}
+
+		li:hover {
+			background-color: transparent;
+		}
+
+		li:last-child {
+			border-bottom: 0;
+
+			a {
+				border-right: 0;
+			}
+		}
+
+		li.active {
+			background-color: transparent;
+			
+			a {
+				color: @blueDark;
+			}
+		}
+    }
+
+}
+
+
+@media (min-width: 481px) {
+	
+
+	.brand-container {
+
+		.navbar-brand-custom {
+			background-image: url("../img/logo.png");
+			background-repeat: no-repeat;
+			width: 163px;
+			height: 55px;
+		}
+
+	}
+
+}

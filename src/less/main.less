@@ -1,5 +1,29 @@
-body {
-	color: green;
+.highlight(@green, @white);
+
+@font-face {
+   font-family: 'ProximaNova';
+      src: url('../font/ProximaNova-Light.otf');
+      /*src: url('../font/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+           url('../font/ProximaNova-Light.woff') format('woff'),
+           url('../font/ProximaNova-Light.ttf') format('truetype'),
+           url('../font/ProximaNova-Light.svg#ProximaNova') format('svg');*/
+   font-weight: normal;
+   font-style: normal;
 }
 
-.highlight(@green, @white);
+
+
+// Responsive media queries
+
+@media (min-width: 1000px) {
+
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.row {
+		//margin-right: 0;
+	}
+
+}
