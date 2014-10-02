@@ -1,4 +1,119 @@
+// Squares
 
+.square-container,
+.square-info {
+	position: relative;
+	margin: 1.5em 0;
+}
+
+ul#square-tiles {
+	list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+	li {
+        display: inline-block;
+        //table;
+        width: 225px;
+        height: 225px;
+        padding: 0;
+        overflow: hidden;
+        //margin: -0.165em -0.135em;
+        background-color: @white;
+        border: 1px solid @grayLight;
+        text-align: center;
+        
+	    -webkit-transform: rotate(45deg);
+	    -moz-transition: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    -o-transform: rotate(45deg);
+	    transform: rotate(45deg);
+        
+        -webkit-transition: all 500ms ease-out;
+        -moz-transition: all 500ms ease-out;
+        -ms-transition: all 500ms ease-out;
+        -o-transition: all 500ms ease-out;
+        transition: all 500ms ease-out;
+
+        	a {
+		        width: 100%;
+		        height: 100%;
+		        //display: block;
+		        display:table;
+		        position: relative;
+		        color: @grayMedium;
+		        font-size: 13px;
+		        font-family: @proximaNovaSemiBold;
+
+	        	div {
+			        position: absolute;
+					top: 35%;
+					left: 35%;
+
+			        -webkit-transform: rotate(-45deg);
+				    -moz-transition: rotate(-45deg);
+				    -ms-transform: rotate(-45deg);
+				    -o-transform: rotate(-45deg);
+				    transform: rotate(-45deg);
+
+			        img {
+				        height: 32px;
+				        width: 32px;
+				        margin: 0 auto;
+				        padding: 0;
+
+				        /*-webkit-transition: all 300ms ease-in-out;
+			            -moz-transition: all 300ms ease-in-out;
+			            -ms-transition: all 300ms ease-in-out;
+			            -o-transition: all 300ms ease-in-out;
+			            transition: all 300ms ease-in-out;*/
+				    }
+			    }
+
+				span {
+			        width: 100%;
+			        padding-top: 15px;
+			        display: table-cell;
+			        vertical-align: middle;
+			        text-align: center;
+			        text-transform: uppercase;
+
+			        -webkit-transform: rotate(-45deg);
+				    -moz-transition: rotate(-45deg);
+				    -ms-transform: rotate(-45deg);
+				    -o-transform: rotate(-45deg);
+				    transform: rotate(-45deg);
+			    }
+		    }
+    }
+
+    li:hover {
+        background-color: @grayDeep;
+        border-color: @grayDeep;
+
+		/*-webkit-transform: rotate(45deg);
+	    -moz-transition: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    -o-transform: rotate(45deg);
+	    transform: rotate(45deg);*/
+
+        /*-moz-transform: scale(1.125);
+        -webkit-transform: scale(1.125);
+        -o-transform: scale(1.125);
+        -ms-transform: scale(1.125);
+        transform: scale(1.125);*/
+    }
+
+    li:hover a {
+        color: @whiteMedium;
+        text-decoration: none;
+    }
+
+}
 
 
 // Quotes
@@ -55,7 +170,7 @@
 .cbp-qtprogress {
     position: absolute;
     background: @greenDark;
-    height: 2px;
+    height: 3px;
     width: 0%;
     top: 1px;
     z-index: 1000;
@@ -78,16 +193,27 @@
 }
  
 
-/*@media (max-width: 480px) {
+@media (max-width: 767px) {
  	
-	.quotes,
-	.cbp-qtrotator .cbp-qtcontent {
-		height: 80px;
-	}
+	ul#square-tiles {
+		text-align: left;
 
-    .cbp-qtrotator blockquote {
-    	font-size: 18px;
-    	line-height: 20px;
-    }
+		li {
+	        width: 70px;
+	        height: 70px;
+
+	        a {
+
+	        	div {
+	        		top: 25%;
+	        		left: 25%;
+	        	}
+
+	        	span {
+	        		display: none;
+	        	}
+	        }
+	    }
+	}
  
-}*/
+}

@@ -4,7 +4,7 @@ $( function() {
 	if ( $('.quotes').length )
 	{
 		$('#cbp-qtrotator').cbpQTRotator({
-				speed    : 500,
+				speed    : 800,
 				easing   : 'ease',
 				interval : 7000
 		});
