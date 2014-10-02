@@ -11,6 +11,38 @@
    font-style: normal;
 }
 
+@font-face {
+   font-family: 'ProximaNovaBold';
+      src: url('../font/ProximaNova-Bold.otf');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'OpenSans';
+      src: url('../font/OpenSans-Regular.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+
+
+.info {
+	background-color: @whiteMedium;
+	min-height: 500px;
+
+	h1 {
+		font-family: @proximaNovaBold;
+		font-size: 52px;
+		text-transform: uppercase;
+		color: @grayDark;
+		margin: 50px 0 10px 0;
+	}
+}
+
+
+
 
 
 // Responsive media queries
@@ -23,7 +55,7 @@
 	}
 
 	.row {
-		//margin-right: 0;
+		margin-right: 0;
 	}
 
 }

@@ -6308,10 +6308,36 @@ button.close {
            url('../font/ProximaNova-Light.ttf') format('truetype'),
            url('../font/ProximaNova-Light.svg#ProximaNova') format('svg');*/
 }
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../font/ProximaNova-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../font/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.info {
+  background-color: #f6f6f6;
+  min-height: 500px;
+}
+.info h1 {
+  font-family: 'ProximaNovaBold', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 52px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 50px 0 10px 0;
+}
 @media (min-width: 1000px) {
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
+  }
+  .row {
+    margin-right: 0;
   }
 }
 .navigation-bar {
@@ -6454,3 +6480,164 @@ button.close {
     height: 55px;
   }
 }
+footer {
+  width: 100%;
+  height: 66px;
+  background-color: #28282e;
+}
+.copy {
+  color: #f5f5f5;
+  font-size: 15px;
+  font-family: 'OpenSans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  margin: 22px 0;
+  opacity: 0.5;
+}
+.social-buttons {
+  margin-top: 18px;
+}
+.social-buttons ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.social-buttons ul li {
+  display: inline-block;
+  margin: 0 3px;
+  opacity: 0.5;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+.social-buttons ul li a {
+  display: block;
+  width: 28px;
+  height: 29px;
+}
+.social-buttons ul li:hover {
+  opacity: 1;
+}
+.social-buttons ul li.social-linkedin {
+  background-image: url("../img/social-linkedin.png");
+}
+.social-buttons ul li.social-twitter {
+  background-image: url("../img/social-twitter.png");
+}
+.social-buttons ul li.social-facebook {
+  background-image: url("../img/social-facebook.png");
+}
+.nav-footer {
+  margin: 22px 0;
+}
+.nav-footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.nav-footer ul li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.nav-footer ul li a {
+  color: #f5f5f5;
+  font-size: 12px;
+  font-family: 'OpenSans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  opacity: 0.5;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+.nav-footer ul li a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+@media (min-width: 1000px) {
+  .copy {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .social-buttons ul {
+    text-align: center;
+  }
+}
+.quotes {
+  height: 160px;
+  background-color: #14ccac;
+  font-family: 'ProximaNova', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  color: #f6f9fa;
+}
+.cbp-qtrotator {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.cbp-qtrotator .cbp-qtcontent {
+  position: absolute;
+  height: 160px;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  width: 100%;
+  display: table;
+}
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  border-bottom: none;
+}
+/* Currently visible */
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  position: relative;
+  z-index: 100;
+  pointer-events: auto;
+  opacity: 1;
+}
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after {
+  content: " ";
+  display: table;
+}
+.cbp-qtrotator .cbp-qtcontent:after {
+  clear: both;
+}
+.cbp-qtprogress {
+  position: absolute;
+  background: #0ab282;
+  height: 2px;
+  width: 0%;
+  top: 1px;
+  z-index: 1000;
+}
+.cbp-qtrotator blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: 0;
+  font-size: 33px;
+  font-style: italic;
+  line-height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+.cbp-qtrotator blockquote p {
+  margin: 0;
+}
+/*@media (max-width: 480px) {
+ 	
+	.quotes,
+	.cbp-qtrotator .cbp-qtcontent {
+		height: 80px;
+	}
+
+    .cbp-qtrotator blockquote {
+    	font-size: 18px;
+    	line-height: 20px;
+    }
+ 
+}*/
