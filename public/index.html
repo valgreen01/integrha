@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es" class="no-js">
 <head>
@@ -20,9 +21,9 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-	
+
 	<header>
-		<nav class="navigation-bar" role="navigation">	
+		<nav class="navigation-bar" role="navigation">
 			<div class="container-fluid">
 
 				<div class="navbar-header">
@@ -33,28 +34,72 @@
 						<span class="icon-bar"></span>
 					</button>
 					<div class="brand-container">
-						<a class="navbar-brand-custom" href="#"></a>
+						<a class="navbar-brand-custom" href="/"></a>
 					</div>
 					<div class="diagonal-shape"></div>
 			    </div>
 
 			    <div class="navbar-collapse collapse nav-list-container">
 					<ul class="nav navbar-nav nav-list">
-						<li class="active"><a href="#">Inicio</a></li>
+						<li class="active"><a href="/">Inicio</a></li>
 						<li><a href="#reclutamiento">Reclutamiento</a></li>
 						<li><a href="#capacitaciones">Capacitaciones</a></li>
 						<li><a href="#galeria">Galería</a></li>
-						<li><a href="#contacto">Contacto</a></li>
+						<li><a href="contacto">Contacto</a></li>
 					</ul>
 				</div>
 
 			</div>
 		</nav>
 	</header>
-	
+
 	<section class="slider">
-		<div style="background: url('img/ejecutivos.jpg') top center no-repeat; background-size: cover; width: 100%; height: 680px;"></div>
+		<div class="slider-bg"></div>
+		<!--<div style="background: url('img/ejecutivos.jpg') top center no-repeat; background-size: cover; width: 100%; height: 680px;"></div>-->
+
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="7000">
+ 
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+		  </ol>
+		 
+		  <!-- Slider Content (Wrapper for slides )-->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <div class="animate fadeInUp" style="background: url('img/slide-home-1.jpg') top center no-repeat; background-size: cover; width: 100%; height: 680px;"></div>
+		      <div class="carousel-caption">
+		      	<h1 class="animated-slower fadeInLeft">Una forma de reunirnos y unirnos...</h1>
+		        <p class="animated-medium fadeInLeft">El concepto de TEAM FACTORY: mediante la metodología  Outdoor / Indoor training que experimentan nuestros participantes en cada una de nuestras...</p>
+		        <span class="line-under"></span>
+		        <a href="#" target="_self" class=""><div class="button-slider animated-medium bounceInRight">Reclutamiento</div></a>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="animate fadeInUp" style="background: url('img/slide-home-2.jpg') top center no-repeat; background-size: cover; width: 100%; height: 680px;"></div>
+		      <!--<img src="img/ejecutivos.jpg" alt="ejecutivos" style="background-size: cover; width: 100%; height: 680px;">-->
+		      <div class="carousel-caption">
+		      	<h1 class="animated-slower fadeInLeft">Lorem ipsum dolor sit amet...</h1>
+		        <p class="animated-medium fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis maxime distinctio magnam ratione...</p>
+		      </div>
+		    </div>
+		  </div>
+		 
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left prev-slide"></span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right next-slide"></span>
+		  </a>
+		  
+		</div>
+
 	</section>
+
+
 
 	<section class="info">
 		<div class="container">
@@ -67,34 +112,47 @@
 			</div>
 
 			<div class="row">
-				<div class="square-container col-xs-12">
+				<div class="square-container tabbed-elems col-xs-12">
 
 					<ul id="square-tiles" class="row">
-	                    <li class="tile col-xs-3">
-	                        <a href="#"><div><img src="img/pink-icon1.png" alt=""></div><span>Team Factory</span></a>
+	                    <li class="tile col-xs-2">
+	                        <a href="javascript:void(0);"><div><img src="img/pink-icon1.png" alt=""></div><span>Team Factory</span></a>
 	                    </li>
-	                    <li class="tile col-xs-3">
-	                        <a href="#"><div><img src="img/pink-icon2.png" alt=""></div><span>Nuestra Sede</span></a>
+	                    <li class="tile col-xs-2">
+	                        <a href="javascript:void(0);"><div><img src="img/pink-icon2.png" alt=""></div><span>Nuestra Sede</span></a>
 	                    </li>
-	                    <li class="tile col-xs-3">
-	                        <a href="#"><div><img src="img/pink-icon3.png" alt=""></div><span>Proceso/Facilitadores</span></a>
+	                    <li class="tile col-xs-2">
+	                        <a href="javascript:void(0);"><div><img src="img/pink-icon3.png" alt=""></div><span>Proceso/Facilitadores</span></a>
 	                    </li>
-	                    <li class="tile col-xs-3">
-	                        <a href="#"><div><img src="img/pink-icon4.png" alt=""></div><span>Consultores</span></a>
+	                    <li class="tile col-xs-2">
+	                        <a href="javascript:void(0);"><div><img src="img/pink-icon4.png" alt=""></div><span>Consultores</span></a>
 	                    </li>
 	                </ul>
 
+	                <div class="square-info col-xs-12">
+						<h2>Team Factory</h2>
+						<hr>
+						<p class="info-text">Mediante la metodología  Outdoor / Indoor training que experimentan nuestros participantes en cada una de nuestras innovadoras experiencias donde tienen la oportunidad de potenciar las habilidades laborales mediante una metodología vivencial.</p>
+					</div>
+					<div class="square-info col-xs-12">
+						<h2>Nuestra Sede</h2>
+						<hr>
+						<p class="info-text">El único Centro de Desarrollo Humano con las instalaciones adecuadas para la realización de talleres lúdico-vivenciales en Aguascalientes.</p>
+					</div>
+					<div class="square-info col-xs-12">
+						<h2>Proceso/Facilitadores</h2>
+						<hr>
+						<p class="info-text">Expertos en desarrollo humano. Proceso de reclutamiento especializado en base a las necesidades de nuestros clientes; filtrando, reclutando y seleccionando al personal idóneo.</p>
+					</div>
+					<div class="square-info col-xs-12">
+						<h2>Consultores</h2>
+						<hr>
+						<p class="info-text">Consultores en capacitación corporativa  de talla internacional.</p>
+					</div>
+
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="square-info col-xs-12">
-					<h2>Team Factory</h2>
-					<hr>
-					<p class="info-text">Mediante la metodología  Outdoor / Indoor training que experimentan nuestros participantes en cada una de nuestras innovadoras experiencias donde tienen la oportunidad de potenciar las habilidades laborales mediante una metodología vivencial.</p>
-				</div>
-			</div>
-			
 		</div>
 	</section>
 
@@ -143,7 +201,7 @@
 	            		<li><a href="#nosotros">Nosotros</a></li>
 	            		<li><a href="#capacitaciones">Capacitaciones</a></li>
 	            		<li><a href="#galeria">Galería</a></li>
-	            		<li><a href="#contacto">Contacto</a></li>
+	            		<li><a href="contacto">Contacto</a></li>
 	            	</ul>
 	            </nav>
 			</div>
